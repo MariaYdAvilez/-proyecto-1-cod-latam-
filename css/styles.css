@@ -1,0 +1,178 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+   background-color: #fbfbfb ; 
+   font-family: 'Tilt Prism', cursive;
+   font-size: 18px;
+   line-height: 1.2;
+}
+   
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    height: 90px;
+    position: fixed;
+   
+    align-items: center;
+    padding: 10px;
+    background-color: #fbfbfb;
+    
+    width: 100%;
+    top: 0;
+    box-shadow: 0 3px 10px -5px #af599e
+    
+}
+
+.Logo-mvd{
+    
+    height: 90px;
+    
+    
+}
+
+nav ul{
+ display: flex;
+ margin: 0;
+ padding: 0;
+
+}
+
+nav ul li{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    width: 50px;
+
+}
+
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img-principal{
+    margin-top: 100%;
+    border-radius: 100%;
+    width: 400px;
+    max-width: 100%;
+    
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    padding-top: 10px;
+
+    min-height: 100vh;
+
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    
+    
+}
+
+
+h1{
+    font-size: 36px;
+    text-align: center;
+}
+h2{
+    font-size: 28px;
+}
+
+p{
+    margin: 15px;
+    
+    
+}
+
+.boton{
+  
+    display: block;
+    margin-top: 5%;
+    margin-left: 25%;
+    text-align: center;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  background-color:#af599e ;
+  color: #fbfbfb;
+  font-size: 20px; 
+  
+
+}
+
+
+
+.contacto-1{
+    background-color:rgba(175, 89, 158, 0.3) ;
+    color: #0f0f0f;
+     
+}
+
+ul#contacto-links{
+    display: flex;
+    margin-top: 100%;}
+
+ul#contacto-links li{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 4px;
+}
+    
+footer{
+    background-color: #af599e ;
+    color:#fbfbfb ;
+    height: 90px;
+    justify-content: center;
+    text-align: center;
+}
